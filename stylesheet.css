@@ -1,5 +1,5 @@
 body {
-  font-family: "Avenir Next";
+  font-family: "Arial";
 }
 
 li {
@@ -28,12 +28,13 @@ li {
   opacity: 0.8;
   display:block;
   transition:all 0.5s;
+  text-decoration: none;
 }
 .header-list a:hover{
   opacity: 1;
 }
 .main {
-  padding: 100px 0px;
+  padding-top: 100px ;
   text-align:center;
 }
 
@@ -41,38 +42,54 @@ li {
   font-size: 140px;
 }
 
-.copy-container h2 {
+.copy-container p {
   font-size: 60px;
 }
 
 .copy-container span {
   color: #e9b340;
+  font-family:"Avenir Next";
 }
 .copy-container img {
-  width:400px;
-  height:400px;
+  width:300px;
+  height:300px;
+  padding-bottom:100px;
 }
 .copy-container2{
-  padding-top:20px;
-  background: rgb(188, 188, 192);
-  height: 300px;
-  width:1330px;
+  padding-top:50px ; 
+  background: rgb(231, 231, 236);
+  padding-bottom:50px;
+}
+.copy-container2 p{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.baris1 {
+  letter-spacing: 0.1px;
+}
+.copy-container3 h3{
+  padding-top: 100px;
 }
 .li img{
-  width: 80%;
+  width: 65%;
   
 }
 .flex-list {
   display: flex;
+  padding-top:50px;
+  padding-bottom:150px;
 }
 
 .flex-list li{
  flex:auto; 
 }
 .contact-form{
-  background-color: #dde6ec;
+  background-color: #f2f6f8;
   padding-top:50px;
-  padding-bottom:100px;
+  padding-bottom:150px;
+}
+.contact-form a{
+  text-decoration: none;
 }
 .contact-form input{
   width:700px;
@@ -80,7 +97,7 @@ li {
   margin-bottom:30px;
   padding:20px;
   font-size:18px;
-  border:1px solid #ff7d04;
+  border:1px solid white;
   border-radius: 10px;
   padding-bottom:40px;
 }
@@ -110,8 +127,10 @@ li {
   float: right;
 }
 
-.footer-list li {
+.footer-list li a{
   padding-bottom: 20px;
+  text-decoration: none;
+  line-height: 40px;
 }
 .footer-list a{
   color:white;
