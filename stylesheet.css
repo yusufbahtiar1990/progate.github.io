@@ -1,3 +1,9 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding: 0;
+}
+
 body {
   font-family: "Arial";
 }
@@ -6,19 +12,26 @@ li {
   list-style: none;
 }
 
-.header {
+header {
   background-color: black;
   color: #fff;
   height: 90px;
   width:100%;
 }
 
+
 .header-logo {
   float: left;
   font-size: 36px;
   padding: 20px 40px;
 }
-
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 10px;  
+  display:none;
+}
 .header-list li {
   float: left;
   padding: 33px 20px;
@@ -52,7 +65,7 @@ li {
 }
 .copy-container img {
   width:300px;
-  height:300px;
+  height:400px;
   padding-bottom:100px;
 }
 .copy-container2{
@@ -101,6 +114,9 @@ li {
   border-radius: 10px;
   padding-bottom:40px;
 }
+.contact-form p{
+  padding-bottom: 60px;
+}
 .btn{
   padding:24px 200px;
   background-color:#e7e421;
@@ -111,10 +127,10 @@ li {
 .btn:hover{
   opacity: 1;
 }
-.footer {
+footer {
   background-color: #6b7780;
   color: #fff;
-  height: 120px;
+  height: 180px;
   padding: 40px;
 }
 
@@ -140,33 +156,47 @@ li {
   opacity: 1;
 }
 
-@media (max-width:1000px) {
-  /* Ganti warna <h1> ke blue */
-    h1{
-      color:blue;
-      font-size: 50px;
-    }
-  }
 /* Tata letak untuk Tablet */
 @media (max-width: 1000px) {
-  .contents {
+  .flex-list {
     flex-wrap: wrap;
   }
-  .lesson-icon{
-    width: 50%;
+  .li img{
+    width:50%;
   }
+  .copy-container h1{
+    font-size:50px;
+  }
+ .copy-container p{
+  font-size: 30px;
+ }
+ .copy-container img{
+  width:50%;
+  height:50%;
+ }
+ .contact-form input{
+  width:95%;
+ }
+.contact-form p{
+  padding-bottom: 30px;
+}
+.btn{
+  padding: 10px 135px;
+}
+footer{
+  line-height:15px ;
+}
+.contact-form{
+  padding-bottom: 50px;
+}
+.header-list{
+  display: none;
+}
+.menu-icon{
+  display: block;
+}
 }
 
-/* Tata letak untuk Smartphone */
-/*670px dan di bawahnya ke media query */
-@media (max-width:670px) {
-  /* Tetapkan flex-direction milik .flex-list */
-  .flex-list{
-  flex-direction:column;
-  }
-  /* Tetapkan margin dari .flex-list li ke 0 auto */
-  .flex-list li{
-    margin:0 auto;
-  }
+
   
-}
+  
